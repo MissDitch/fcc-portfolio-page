@@ -8,7 +8,7 @@
   --accentLight: #F0F4C3;
 }
 body , .circle{
-	background-image: url("http://home.kpn.nl/d.geerlings/img/FotoshootB_D-25.jpg");
+/*	background-image: url("http://home.kpn.nl/d.geerlings/img/FotoshootB_D-25.jpg");  */
  background-color:var(--dark);
 	
 	margin-top: 50px;
@@ -20,8 +20,15 @@ body , .circle{
     background-size: cover;
 }
 h1 {
+	color: var(--light);
 	font-size: 60px;
 	margin: 30px 0;
+	clear: both;
+}
+h2 {
+	font-size: 40px;
+	color: var(--dark);
+	margin: 100px 0;
 	clear: both;
 }
 footer {
@@ -32,9 +39,12 @@ footer {
 	width: 200px;
 	margin: -120px 0 30px 0;
 }
+.circle h2 {
+	color: var(--light);
+}
 .circle {
 	display: inline-block;
-//	background: blue;
+
 
 	height: 200px;
 }
@@ -51,6 +61,9 @@ footer {
 	border-radius: 2px;
 	margin-bottom: 10px;
 	padding: 20px 20px 100px 20px;
+}
+.showcase {
+	margin: 60px 0;
 }
 .form-container {
 	display:table;
