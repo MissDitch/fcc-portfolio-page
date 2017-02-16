@@ -1,0 +1,70 @@
+:root {
+	--transparent: rgba(255,255,255, 0.8);
+  --light: #cccccc;  /* light version of primary  */
+  --dark: #111111;  /* dark version of primary */
+/*  --bgcolor: #673AB7;  /* e*/
+  --default: #777777;  /* */
+  --accent: #8BC34A;  /* */
+  --accentLight: #F0F4C3;
+}
+body , .circle{
+	background-image: url("http://home.kpn.nl/d.geerlings/img/FotoshootB_D-25.jpg");
+ background-color:var(--dark);
+	
+	margin-top: 50px;
+	
+	position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 {
+	font-size: 60px;
+	margin: 30px 0;
+	clear: both;
+}
+footer {
+	background-color: #ffffff;
+}
+#about img, .circle {
+	border-radius: 50%;
+	width: 200px;
+	margin: -120px 0 30px 0;
+}
+.circle {
+	display: inline-block;
+//	background: blue;
+
+	height: 200px;
+}
+#portfolio img {
+	background-color: var(--dark);
+	margin: 10px 0;
+}
+.head{
+	padding: 30px 0 100px 0;
+	color: var(--dark);
+}
+.main {
+	background-color: var(--transparent);
+	border-radius: 2px;
+	margin-bottom: 10px;
+	padding: 20px 20px 100px 20px;
+}
+.form-container {
+	display:table;
+}
+.form-block {
+	
+}
+
+.form-group {
+	display: table-cell;
+	vertical-align: bottom;
+	height:55px;
+		width: 100%;
+}
+.message{
+	height: 120px;
+}
