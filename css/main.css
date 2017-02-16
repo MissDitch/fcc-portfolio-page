@@ -10,7 +10,7 @@
 body , .circle{
 /*	background-image: url("http://home.kpn.nl/d.geerlings/img/FotoshootB_D-25.jpg");  */
  background-color:var(--dark);
-	
+	font-family: 'Open Sans';
 	margin-top: 50px;
 	
 	position: relative;
@@ -19,17 +19,33 @@ body , .circle{
     background-repeat: no-repeat;
     background-size: cover;
 }
+h1, h2 {
+	/*white-space: nowrap; */
+}
 h1 {
-	color: var(--light);
+	font-weight: 300;
+	color: #ffffff;
 	font-size: 60px;
 	margin: 30px 0;
-	clear: both;
+}
+h1 span {
+	font-weight: 600;
+	color: var(--light);
 }
 h2 {
+	font-weight: 900;
 	font-size: 40px;
 	color: var(--dark);
 	margin: 100px 0;
-	clear: both;
+}
+h3 {
+	font-weight: 700;
+	font-size: 30px;
+	margin: 30px;
+}
+p {
+	line-height: 24px;
+	font-weight: 500;
 }
 footer {
 	background-color: #ffffff;
@@ -38,6 +54,14 @@ footer {
 	border-radius: 50%;
 	width: 200px;
 	margin: -120px 0 30px 0;
+}
+.clear{
+	clear:both;
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 600;
 }
 .circle h2 {
 	color: var(--light);
@@ -65,19 +89,48 @@ footer {
 .showcase {
 	margin: 60px 0;
 }
-.form-container {
-	display:table;
+
+form > div{
+	position: relative;
 }
-.form-block {
-	
+form > div > label{
+	position: absolute;
 }
 
 .form-group {
-	display: table-cell;
-	vertical-align: bottom;
-	height:55px;
+	position: relative;
+
+
+	height:60px;
 		width: 100%;
 }
+.form-label {
+	width: 400px;
+	height: 100px;
+}
+
+
+
+.form-control + .form-label {
+	position: absolute;
+	    top: 6px;
+	/*position: relative; */
+	padding: 0 1em;
+	color: #c2c3c5;
+	transform-origin: center left;
+	transition: all 0.3s;
+}
+.form-control:focus + .form-label {
+	color: #333333;
+	
+	transform: translateY(-30px);
+	/*transform: scale(0.8); */
+
+}/*
+.form-control:valid + .form-label {
+	color: #333333;
+	transform: translateY(-30px);
+}  */
 .message{
 	height: 120px;
 }
