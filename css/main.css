@@ -9,35 +9,25 @@
 }
 body , .circle{
 /*	background-image: url("http://home.kpn.nl/d.geerlings/img/FotoshootB_D-25.jpg");  */
- background-color:var(--dark);
+ 	background-color:var(--dark);
 	font-family: 'Open Sans';
-	margin-top: 50px;
-	
+	margin-top: 50px;	
 	position: relative;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-h1, h2 {
-	/*white-space: nowrap; */
-}
-h1 {
-	font-weight: 300;
-	color: #ffffff;
-	font-size: 60px;
+h1 {	
+	font-size: 50px;
 	margin: 30px 0;
 }
-h1 span {
-	font-weight: 600;
-	color: var(--light);
-}
 h2 {
-	font-weight: 900;
+	font-weight: 600;
 	font-size: 40px;
 	color: var(--dark);
-	margin: 100px 0;
-}
+	margin-bottom: 40px;
+}	
 h3 {
 	font-weight: 700;
 	font-size: 30px;
@@ -47,58 +37,91 @@ p {
 	line-height: 24px;
 	font-weight: 500;
 }
-footer {
-	background-color: #ffffff;
-}
-#about img, .circle {
-	border-radius: 50%;
-	width: 200px;
-	margin: -120px 0 30px 0;
-}
-.clear{
-	clear:both;
+
+/*  navbar */
+.navbar-fixed-top {
+    border-width: 0 0 0px;
 }
 
-.lead {
-    font-size: 18px;
-    font-weight: 600;
+.navbar-brand {
+	font-weight: 900;
+	 color: #000000;
 }
-.circle h2 {
-	color: var(--light);
+#myNavbar .navbar-nav>li>a {
+	font-weight: 600;
+    color: #000000;
 }
-.circle {
-	display: inline-block;
-	height: 200px;
+#myNavbar .navbar-nav>li>a:hover {
+    color: var(--light);
 }
-#portfolio img {
-	background-color: var(--dark);
-	margin: 10px 0;
+#myNavbar .navbar-nav>.active>a {
+	background-color: var(--default);
+    color: #ffffff;
 }
+
+/*  head section */
+
 .head{
 	padding: 30px 0 100px 0;
-	color: var(--dark);
 }
+
+.name {
+	font-weight: 600;
+	color: var(--light);
+}
+.mission {
+	font-weight: 100;
+	color: #ffffff;
+}
+
+/*  main section */
+
 .main {
 	background-color: var(--transparent);
 	border-radius: 2px;
 	margin-bottom: 10px;
 	padding: 20px 20px 100px 20px;
 }
+.lead {
+    font-size: 18px;
+    font-weight: 600;
+}
+#about img, .circle {
+	border-radius: 50%;
+	width: 200px;
+	margin: -120px 0 30px 0;
+}
+.circle h2 {
+	margin: 100px 0;
+	color: #ffffff;
+}
+.circle {
+	display: inline-block;
+	height: 200px;
+}
+
+/* portfolio section */
+
+#portfolio img {
+	background-color: var(--dark);
+	margin: 10px 0;
+}
+
 .showcase {
 	margin: 60px 0;
 }
+
+/* contact section */
+
 .form-container {
 	display:table;
 }
-
 .form-group {
 	display: table-cell;
 	vertical-align: bottom;
 	height:55px;
 	width: 100%;
 }
-
-
 /* color of placeholder text */
 .white-placeholder::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:  #ffffff;
@@ -116,7 +139,19 @@ footer {
 .white-placeholder:-ms-input-placeholder { /* Internet Explorer 10-11 */
    color:     #ffffff;
 }
-
 .message{
 	height: 120px;
+}
+
+
+/*  footer */
+footer {
+	background-color: #ffffff;
+}
+
+@media only screen and (max-width: 768px) {
+	 .name, .mission {
+		 white-space: nowrap;
+	}
+
 }
