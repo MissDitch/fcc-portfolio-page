@@ -118,14 +118,21 @@ p {
 
 /* portfolio section */
 
-#portfolio img {
-	background-color: var(--dark);
-	margin: 10px 0;
-}
+/* Google Drive Direct Link Generator: https://sites.google.com/site/gdocs2direct/ */
 
 .showcase {
 	margin: 60px 0;
 }
+.showcase a {
+	font-weight: 600;
+	color: var(--default);
+	height: 50px;
+  display: block;
+}
+.pfImage {
+	margin: 20px 0;
+}
+
 
 /* contact section */
 
@@ -177,7 +184,8 @@ footer {
 	
 }
 .iconList li i {
-	color: var(--default);
+	color: var(--default
+	);
 	font-size: 30px;
 }
 
