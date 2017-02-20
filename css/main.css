@@ -66,9 +66,10 @@ p {
 }
 #myNavbar .navbar-nav>li>a {
 	font-weight: 600;
-    color: #000000;
+  color: #000000;
 }
-#myNavbar .navbar-nav>li>a:hover {
+#myNavbar .navbar-nav>li>a:hover, 
+button#submitBtn:hover{
     color: var(--light);
 }
 #myNavbar .navbar-nav>.active>a {
@@ -162,6 +163,14 @@ p {
 .white-placeholder:-ms-input-placeholder { /* Internet Explorer 10-11 */
    color:     #ffffff;
 }
+button#submitBtn {
+	background-color: var(--default);
+	font-weight: 600;
+  color: #ffffff;
+	padding: 15px;
+	border-radius: 0;
+}
+
 .message{
 	height: 120px;
 }

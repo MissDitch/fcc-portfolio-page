@@ -48,7 +48,7 @@ function clearedInput() {
 function showMessage(e) {	
 		e.preventDefault();	
 		$(".control-label").hide();
-		var n =	$("#notify").append('<p>Don\'t worry, form is not really submitted!</p>');
+		var n =	$("#notify").append('<p>Form is not really submitted</p>');
 n.fadeOut(5000 );
 	$(".form-control").val("");
 	$(".form-control").removeClass("white-placeholder");
